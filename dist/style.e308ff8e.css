@@ -1,0 +1,18 @@
+html,
+body,
+pre,
+code,
+kbd,
+samp {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.grid {
+  display: grid;
+  width: 300px;
+  gap: 10px;
+  margin: 10px;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

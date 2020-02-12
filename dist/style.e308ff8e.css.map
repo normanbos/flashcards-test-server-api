@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"style.e308ff8e.css","sourceRoot":"..","sourcesContent":["html,\nbody,\npre,\ncode,\nkbd,\nsamp {\n  font-family: 'Press Start 2P', cursive;\n}\n\n.grid {\n  display: grid;\n  width: 300px;\n  gap: 10px;\n  margin: 10px;\n}\n"]}
