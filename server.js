@@ -1,8 +1,12 @@
+// allgemeines Server-Template
+
 const fs = require('fs')
 const express = require('express')
 const uid = require('uid')
 const cors = require('cors')
 const helmet = require('helmet')
+
+const { PORT = 3334 } = process.env
 
 function saveCards(cards, res, output) {
   fs.writeFile('./cards.json', JSON.stringify(cards, null, 2), err => {
@@ -20,7 +24,7 @@ const app = express()
 app.use(express.json())
 app.use(helmet())
 app.use(cors()) //cross-origin-resource-sharing
-app.listen(3334, () => console.log('Express ready on port 3334'))
+app.listen(PORT, () => console.log(`Express ready on port ${PORT}`))
 
 app.get('/cards', (req, res) => {
   res.json(cards)
